@@ -1,0 +1,62 @@
+[
+  {
+    "tournament": "2024-07-28",
+    "event": "XD",
+    "team": [
+      { "firstName": "Andrew", "lastName": "" },
+      { "firstName": "Jin Yi", "lastName": "" }
+    ],
+    "points": 6000
+	"matches": 1
+  },
+  {
+    "tournament": "2024-07-28",
+    "event": "XD",
+    "team": [
+      { "firstName": "Marcus", "lastName": "Lee" },
+      { "firstName": "Christina", "lastName": "" }
+    ],
+    "points": 5000
+	"matches": 1
+  },
+  {
+    "tournament": "2024-07-28",
+    "event": "XD",
+    "team": [
+      { "firstName": "Alvin", "lastName": "Tham" },
+      { "firstName": "Shu Wen", "lastName": "" }
+    ],
+    "points": 4000
+	"matches": 1
+  },
+  {
+    "tournament": "2024-07-28",
+    "event": "XD",
+    "team": [
+      { "firstName": "Kyle", "lastName": "" },
+      { "firstName": "Jessica", "lastName": "" }
+    ],
+    "points": 3000
+	"matches": 1
+  },
+  {
+    "tournament": "2024-07-28",
+    "event": "XD",
+    "team": [
+      { "firstName": "Thomas", "lastName": "" },
+      { "firstName": "Shino", "lastName": "" }
+    ],
+    "points": 2000
+	"matches": 1
+  },
+  {
+    "tournament": "2024-07-28",
+    "event": "XD",
+    "team": [
+      { "firstName": "Dylen", "lastName": "Tang" },
+      { "firstName": "Kah Yan", "lastName": "" }
+    ],
+    "points": 1000
+	"matches": 1
+  }
+]
