@@ -1,249 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSBC Rankings</title>
-    <link rel="stylesheet" href="css/styles.css">
-	<script src="js/scripts.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSBC Rankings</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/scripts.js" defer></script>
+  <style>
+    .points h3, .points p {
+      margin: 0;
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
-	<!-- ☰ Button -->
-    <header class="top-header">
-		<button id="toggle-sidebar" title="Menu">☰</button>
-	</header>
+  <header class="top-header">
+    <button id="toggle-sidebar" title="Menu">☰</button>
+  </header>
+  <div class="sidebar">
+    <a href="index.html">Player Rankings</a>
+    <a href="20240728_md.html">Tournament Results</a>
+  </div>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-		<a href="index.html">Player Rankings</a>
-        <a href="20240728_md.html">Competition Results</a>	
+  <div class="container">
+    <div class="header">
+      <h1>SSBC Player Rankings</h1>
+      <div class="select-wrapper">
+        <select class="tournament-select" onchange="location = this.value;">
+          <option value="double_xd.html">Double</option>
+          <option value="individual_xd.html">Individual</option>
+        </select>
+      </div>
     </div>
-
-    <div class="container">
-        <!--<div class="header">
-            <h1>SSBC Men's Double Rankings</h1>
-            <p>Update: 29/07/24</p>
-        </div> -->
-		<div class="header">
-			<h1>SSBC Player Rankings</h1>
-		<div class="select-wrapper">
-			<select class="tournament-select" onchange="location = this.value;">
-				<option value="double_xd.html">Double</option>
-				<option value="individual_xd.html">Individual</option>
-			</select>
-		</div>
-		</div>
-        <div class="tabs">
-            <!--<a href="ms.html" class="tab">MS</a>
-            <a href="ws.html" class="tab">tab active</a>-->
-            <a href="individual_md.html" class="tab">MD</a>
-			<!--<div class="tab" onclick="switchTab('index.html')">MD</div>
-			<div class="tab active" onclick="switchTab('double_xd.html')">XD</div>-->
-            <!--<a href="wd.html" class="tab">WD</a>-->
-            <a href="individual_xd.html" class="tab active">XD</a>
-        </div>
-        <div class="rankings">
-            <div class="ranking-item">
-                <div class="ranking-number gold">1</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/andrew.jpg" alt="Player 1">
-                        <h3><span class="first-name">Andrew </span> <span class="last-name"></span></h3>
-                    </div>
-                    <!--<p>Malaysia <img src="images/malaysia_flag.png" alt="India" class="flag"></p>-->
-                </div>
-                <div class="points">
-                    <h3>3,000</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number gold">1</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/jinyi.jpg" alt="Player 2">
-                        <h3><span class="first-name">Jin Yi </span> <span class="last-name"></span></h3>
-                    </div>
-                    <!--<p>Malaysia <img src="images/malaysia_flag.png" alt="India" class="flag"></p>-->
-                </div>
-                <div class="points">
-                    <h3>3,000</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-            <div class="ranking-item">
-                <div class="ranking-number silver">2</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/marcus.jpg" alt="Player 3">
-                        <h3><span class="first-name">Marcus </span> <span class="last-name">Lee</span></h3>
-                    </div>
-                    <!--<p>Malaysia <img src="images/malaysia_flag.png" alt="India" class="flag"></p>-->
-                </div>
-                <div class="points">
-                    <h3>2,500</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number silver">2</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/christina.jpg" alt="Player 4">
-                        <h3><span class="first-name">Christina </span> <span class="last-name"></span></h3>
-                    </div>
-                    <!--<p>Malaysia <img src="images/malaysia_flag.png" alt="India" class="flag"></p>-->
-                </div>
-                <div class="points">
-                    <h3>2,500</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-            <div class="ranking-item">
-                <div class="ranking-number black">3</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/alvin.jpg" alt="Player 5">
-                        <h3><span class="first-name">Alvin </span> <span class="last-name">Tham</span></h3>
-                    </div>
-                    <!--<p>Malaysia <img src="images/malaysia_flag.png" alt="India" class="flag"></p>-->
-                </div>
-                <div class="points">
-                    <h3>2,000</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number black">3</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/sw.jpg" alt="Player 6">
-                        <h3><span class="first-name">Shu Wen </span> <span class="last-name"></span></h3>
-                    </div>
-                    <!--<p>Malaysia <img src="images/malaysia_flag.png" alt="India" class="flag"></p>-->
-                </div>
-                <div class="points">
-                    <h3>2,000</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-            <div class="ranking-item">
-                <div class="ranking-number black">4</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/kyle.jpg" alt="Player 7">
-                        <h3><span class="first-name">Kyle </span> <span class="last-name"></span></h3>
-                    </div>
-                </div>
-                <div class="points">
-                    <h3>1,500</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number black">4</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/littlesica.jpg" alt="Player 8">
-                        <h3><span class="first-name">Jessica </span> <span class="last-name"></span></h3>
-                    </div>
-                </div>
-                <div class="points">
-                    <h3>1,500</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number black">5</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/thomas.jpg" alt="Player 7">
-                        <h3><span class="first-name">Thomas </span> <span class="last-name"></span></h3>
-                    </div>
-                </div>
-                <div class="points">
-                    <h3>1,000</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number black">5</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/shino.jpg" alt="Player 8">
-                        <h3><span class="first-name">Shino </span> <span class="last-name"></span></h3>
-                    </div>
-                </div>
-                <div class="points">
-                    <h3>1,000</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number black">6</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/dylen.jpg" alt="Player 7">
-                        <h3><span class="first-name">Dylen </span> <span class="last-name">Tang</span></h3>
-                    </div>
-                </div>
-                <div class="points">
-                    <h3>500</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			<div class="ranking-item">
-                <div class="ranking-number black">6</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/ky.jpg" alt="Player 8">
-                        <h3><span class="first-name">Kah Yan </span> <span class="last-name"></span></h3>
-                    </div>
-                </div>
-                <div class="points">
-                    <h3>500</h3>
-                    <p>T: 1</p>
-                </div>
-            </div>
-			
-            <!-- Commenting out an additional ranking item
-            <div class="ranking-item">
-                <div class="ranking-number black">4</div>
-                <div class="player-info">
-                    <div class="player">
-                        <img src="images/player7.jpg" alt="Player 7">
-                        <h3><span class="first-name">Player</span> Name 1</h3>
-                    </div>
-                    <div class="player">
-                        <img src="images/player8.jpg" alt="Player 8">
-                        <h3><span class="first-name">Player</span> Name 2</h3>
-                    </div>
-                    <p>Country <img src="images/country_flag.png" alt="Country" class="flag"></p>
-                </div>
-                <div class="points">
-                    <h3>93,000</h3>
-                    <p>T: 19</p>
-                </div>
-            </div>
-            -->
-        </div>
+    <div class="tabs">
+      <a href="individual_md.html" class="tab">MD</a>
+      <a href="individual_xd.html" class="tab active">XD</a>
     </div>
-<script>
-  const select = document.querySelector(".tournament-select");
-  const currentPage = window.location.pathname;
+    <div class="rankings" id="rankings"></div>
+  </div>
 
-  if (select) {
-    // Loop through all options and match with current page
-    for (let option of select.options) {
-      if (currentPage.includes(option.value)) {
+  <script>
+    async function loadRankings() {
+      const res = await fetch('xd_results.json');
+      const data = await res.json();
+      const playerScores = {};
+  
+      data.forEach(entry => {
+        const halfPoints = entry.points / entry.team.length;
+        entry.team.forEach(player => {
+          const key = `${player.firstName} ${player.lastName}`.trim();
+          if (!playerScores[key]) {
+            playerScores[key] = {
+              name: key,
+              points: 0,
+              matches: 0,
+              firstName: player.firstName,
+              lastName: player.lastName
+            };
+          }
+          playerScores[key].points += halfPoints;
+          playerScores[key].matches += entry.matches;
+        });
+      });
+  
+      const rankings = Object.values(playerScores)
+        .sort((a, b) => b.points - a.points)
+        .map((player, index) => {
+          const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : 'black';
+  
+          // Generate image filename: firstname + lastname (lowercased, no spaces)
+          const imageFilename = `${(player.firstName + player.lastName).toLowerCase().replace(/\s+/g, '')}.jpg`;
+  
+          return `
+            <div class="ranking-item">
+              <div class="ranking-number ${rankClass}">${index + 1}</div>
+              <div class="player-info">
+                <div class="player">
+                  <img src="images/${imageFilename}" alt="${player.name}" />
+                  <h3><span class="first-name">${player.firstName}</span> <span class="last-name">${player.lastName}</span></h3>
+                </div>
+              </div>
+              <div class="points">
+                <h3>${player.points.toLocaleString()}</h3>
+                <p>T: ${player.matches}</p>
+              </div>
+            </div>
+          `;
+        });
+  
+      document.getElementById('rankings').innerHTML = rankings.join('');
+    }
+  
+    loadRankings();
+  
+    // Select dropdown current page
+    const select = document.querySelector('.tournament-select');
+    const currentPage = window.location.pathname.split('/').pop();
+    for (const option of select.options) {
+      if (option.value === currentPage) {
         option.selected = true;
         break;
       }
     }
-  }
-</script>
-
-
-
+  </script>  
 </body>
 </html>

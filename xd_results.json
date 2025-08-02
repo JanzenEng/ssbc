@@ -6,8 +6,8 @@
       { "firstName": "Andrew", "lastName": "" },
       { "firstName": "Jin Yi", "lastName": "" }
     ],
-    "points": 6000
-	"matches": 1
+    "points": 6000,
+	  "matches": 1
   },
   {
     "tournament": "2024-07-28",
@@ -16,8 +16,8 @@
       { "firstName": "Marcus", "lastName": "Lee" },
       { "firstName": "Christina", "lastName": "" }
     ],
-    "points": 5000
-	"matches": 1
+    "points": 5000,
+	  "matches": 1
   },
   {
     "tournament": "2024-07-28",
@@ -26,8 +26,8 @@
       { "firstName": "Alvin", "lastName": "Tham" },
       { "firstName": "Shu Wen", "lastName": "" }
     ],
-    "points": 4000
-	"matches": 1
+    "points": 4000,
+	  "matches": 1
   },
   {
     "tournament": "2024-07-28",
@@ -36,8 +36,8 @@
       { "firstName": "Kyle", "lastName": "" },
       { "firstName": "Jessica", "lastName": "" }
     ],
-    "points": 3000
-	"matches": 1
+    "points": 3000,
+	  "matches": 1
   },
   {
     "tournament": "2024-07-28",
@@ -46,8 +46,8 @@
       { "firstName": "Thomas", "lastName": "" },
       { "firstName": "Shino", "lastName": "" }
     ],
-    "points": 2000
-	"matches": 1
+    "points": 2000,
+	  "matches": 1
   },
   {
     "tournament": "2024-07-28",
@@ -56,7 +56,7 @@
       { "firstName": "Dylen", "lastName": "Tang" },
       { "firstName": "Kah Yan", "lastName": "" }
     ],
-    "points": 1000
-	"matches": 1
+    "points": 1000,
+	  "matches": 1
   }
 ]
